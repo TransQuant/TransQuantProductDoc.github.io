@@ -142,11 +142,12 @@ path=${params[0]}
 days=${params[1]}
 
 startDate=`date -d"-$days day" +"%Y%m%d"` 
+#endDate=$(date '+%Y%m%d')
+endDate='20211230'
+
 #startDate 开始日期可以用作因子计算的开始日期，开始日期可以指定日期，如 startData='20210930'；
 #也可以使用当前系统日期-天数，如因子需要从当前日期往前推'天数'天作为因子计算的开始日期：startDate=`date -d"-$days day" +"%Y%m%d"` ，
 #这里’天数‘就是在任务参数中，任务地址后面配置的天数参数
-#endDate=$(date '+%Y%m%d')
-endDate='20211230'
 #同理，endDate 也可以配置为指定日期，如endDate='20211230'；或使用当前系统日期，如endDate=$(date '+%Y%m%d')
 #使用哪种方式根据需求即可，记得去除相关代码前的注释符号“#”
 
